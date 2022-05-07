@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+import librerias.hacer_graficos as graf
 
 
 def cambios_letras(lista):
@@ -51,6 +53,19 @@ def main():
 
     n_direccion=df['Address'].tolist()
     direccion=cambios_letras(n_direccion)
+
+    # ----- PASAR LO NECESARIO A DATAFRAME -----
+
+    observaciones1 = pd.DataFrame({'Ganancias':np.array(m_ganancias_area)})
+    observaciones2 = pd.DataFrame({'Edad Casas':np.array(m_edad_casas)})
+    observaciones3 = pd.DataFrame({'Edad Casas':np.array(m_edad_casas)})
+    observaciones4 = pd.DataFrame({'Edad Casas':np.array(m_edad_casas)})
+    observaciones5 = pd.DataFrame({'Edad Casas':np.array(m_edad_casas)})
+    observaciones6 = pd.DataFrame({'Edad Casas':np.array(m_edad_casas)})
+    observaciones7 = pd.DataFrame({'Edad Casas':np.array(m_edad_casas)})
+
+
+     
 
 
 
