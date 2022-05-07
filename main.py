@@ -67,34 +67,34 @@ def main():
 
      #--- ANALISIS DE UNA CARACTERISTICA ---
 
-    que_desea=str(input('Que desea ver:\n(1)Ganancias\n(2)Edad Casas\n(3)Tamaño Habitaciones\n(4)Numero Habitaciones\n(5)Numero de Dormitorios\n(6)Poblacion\n(7)Precio\n'))
+    que_desea=str(input('Que desea ver:\n\n(1)Ganancias\n(2)Edad Casas\n(3)Tamaño Habitaciones\n(4)Numero Habitaciones\n(5)Numero de Dormitorios\n(6)Poblacion\n(7)Precio\n'))
     if(que_desea=='1'):
         stats = graf.graficos(observaciones1['Ganancias'])
-        print('Ejecutando...')
+        print('Ejecutando...\n')
         stats.analisisCaracteristica()
     elif(que_desea=='2'):
         stats = graf.graficos(observaciones2['Edad Casas'])
-        print('Ejecutando...')
+        print('Ejecutando...\n')
         stats.analisisCaracteristica()
     elif(que_desea=='3'):
         stats = graf.graficos(observaciones3['Tamaño Habitaciones'])
-        print('Ejecutando...')
+        print('Ejecutando...\n')
         stats.analisisCaracteristica()
     elif(que_desea=='4'):
         stats = graf.graficos(observaciones4['Numero Habitaciones'])
-        print('Ejecutando...')
+        print('Ejecutando...\n')
         stats.analisisCaracteristica()
     elif(que_desea=='5'):
         stats = graf.graficos(observaciones5['Numero de Dormitorios'])
-        print('Ejecutando...')
+        print('Ejecutando...\n')
         stats.analisisCaracteristica()
     elif(que_desea=='6'):
         stats = graf.graficos(observaciones6['Poblacion'])
-        print('Ejecutando...')
+        print('Ejecutando...\n')
         stats.analisisCaracteristica()
     elif(que_desea=='7'):
         stats = graf.graficos(observaciones7['Precio'])
-        print('Ejecutando...')
+        print('Ejecutando...\n')
         stats.analisisCaracteristica()
     else:
         print('Introduzca un 1 , 2 , 3 , 4 , 5 , 6 o un 7.')
