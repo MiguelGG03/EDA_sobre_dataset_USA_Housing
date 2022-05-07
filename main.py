@@ -38,9 +38,6 @@ def main():
     n_media_edad_casas=df['Avg. Area House Age'].tolist()
     m_edad_casas=cambios_numeros(n_media_edad_casas)
 
-    n_media_tamano_habitacion=df['Avg. Area Number of Rooms'].tolist()
-    m_tamano_h=cambios_numeros(n_media_tamano_habitacion)
-
     n_media_numero_habitaciones=df['Avg. Area Number of Rooms'].tolist()
     m_n_habit=cambios_numeros(n_media_numero_habitaciones)
 
@@ -61,51 +58,52 @@ def main():
 
     observaciones1 = pd.DataFrame({'Ganancias':np.array(m_ganancias_area)})
     observaciones2 = pd.DataFrame({'Edad Casas':np.array(m_edad_casas)})
-    observaciones3 = pd.DataFrame({'Tamaño Habitaciones':np.array(m_tamano_h)})
-    observaciones4 = pd.DataFrame({'Numero Habitaciones':np.array(m_n_habit)})
-    observaciones5 = pd.DataFrame({'Numero de Dormitorios':np.array(m_n_bedrooms)})
-    observaciones6 = pd.DataFrame({'Poblacion':np.array(m_poblacion)})
-    observaciones7 = pd.DataFrame({'Precio':np.array(precio)})
+    observaciones3 = pd.DataFrame({'Numero Habitaciones':np.array(m_n_habit)})
+    observaciones4 = pd.DataFrame({'Numero de Dormitorios':np.array(m_n_bedrooms)})
+    observaciones5 = pd.DataFrame({'Poblacion':np.array(m_poblacion)})
+    observaciones6 = pd.DataFrame({'Precio':np.array(precio)})
 
 
      #--- ANALISIS DE UNA CARACTERISTICA A ELEGIR---
 
-    que_desea=str(input('Que desea ver:\n\n(1)Ganancias\n(2)Edad Casas\n(3)Tamaño Habitaciones\n(4)Numero Habitaciones\n(5)Numero de Dormitorios\n(6)Poblacion\n(7)Precio\n(8)Direccion\n'))
+    que_desea=str(input('Que desea ver:\n\n(1)Ganancias\n(2)Edad Casas\n(3)Numero Habitaciones\n(4)Numero de Dormitorios\n(5)Poblacion\n(6)Precio\n(7)Direccion\n'))
     if(que_desea=='1'):
         stats = graf.graficos(observaciones1['Ganancias'])
         print('Ejecutando...\n')
         stats.analisisCaracteristica()
+
     elif(que_desea=='2'):
         stats = graf.graficos(observaciones2['Edad Casas'])
         print('Ejecutando...\n')
         stats.analisisCaracteristica()
+
     elif(que_desea=='3'):
-        stats = graf.graficos(observaciones3['Tamaño Habitaciones'])
+        stats = graf.graficos(observaciones3['Numero Habitaciones'])
         print('Ejecutando...\n')
         stats.analisisCaracteristica()
+
     elif(que_desea=='4'):
-        stats = graf.graficos(observaciones4['Numero Habitaciones'])
+        stats = graf.graficos(observaciones4['Numero de Dormitorios'])
         print('Ejecutando...\n')
         stats.analisisCaracteristica()
+
     elif(que_desea=='5'):
-        stats = graf.graficos(observaciones5['Numero de Dormitorios'])
+        stats = graf.graficos(observaciones5['Poblacion'])
         print('Ejecutando...\n')
         stats.analisisCaracteristica()
+
     elif(que_desea=='6'):
-        stats = graf.graficos(observaciones6['Poblacion'])
+        stats = graf.graficos(observaciones6['Precio'])
         print('Ejecutando...\n')
         stats.analisisCaracteristica()
+        
     elif(que_desea=='7'):
-        stats = graf.graficos(observaciones7['Precio'])
-        print('Ejecutando...\n')
-        stats.analisisCaracteristica()
-    elif(que_desea=='8'):
         j=1
         for i in direccion:
             print('-{}- {}\n'.format(j,i))
             j=j+1
     else:
-        print('Introduzca un 1 , 2 , 3 , 4 , 5 , 6 , 7 o un 8')
+        print('Introduzca un 1 , 2 , 3 , 4 , 5 , 6 o un 7')
 
 
 
