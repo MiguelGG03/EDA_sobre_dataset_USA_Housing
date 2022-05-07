@@ -27,7 +27,9 @@ def cambios_numeros(lista):
 def main():
 
     # ----- LEER EL ARCHIVO CSV -----
+
     df=pd.read_csv('USA_Housing.csv')
+
 
     # ----- CREANDO LAS LISTAS DE LOS DATOS -----
     n_media_ganancias_area=df['Avg. Area Income'].tolist()
@@ -54,6 +56,7 @@ def main():
     n_direccion=df['Address'].tolist()
     direccion=cambios_letras(n_direccion)
 
+
     # ----- PASAR LO NECESARIO A DATAFRAME -----
 
     observaciones1 = pd.DataFrame({'Ganancias':np.array(m_ganancias_area)})
@@ -65,7 +68,7 @@ def main():
     observaciones7 = pd.DataFrame({'Precio':np.array(precio)})
 
 
-     #--- ANALISIS DE UNA CARACTERISTICA ---
+     #--- ANALISIS DE UNA CARACTERISTICA A ELEGIR---
 
     que_desea=str(input('Que desea ver:\n\n(1)Ganancias\n(2)Edad Casas\n(3)Tamaño Habitaciones\n(4)Numero Habitaciones\n(5)Numero de Dormitorios\n(6)Poblacion\n(7)Precio\n(8)Direccion\n'))
     if(que_desea=='1'):
