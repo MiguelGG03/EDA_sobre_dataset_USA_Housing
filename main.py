@@ -67,7 +67,7 @@ def main():
 
      #--- ANALISIS DE UNA CARACTERISTICA ---
 
-    que_desea=str(input('Que desea ver:\n\n(1)Ganancias\n(2)Edad Casas\n(3)Tamaño Habitaciones\n(4)Numero Habitaciones\n(5)Numero de Dormitorios\n(6)Poblacion\n(7)Precio\n'))
+    que_desea=str(input('Que desea ver:\n\n(1)Ganancias\n(2)Edad Casas\n(3)Tamaño Habitaciones\n(4)Numero Habitaciones\n(5)Numero de Dormitorios\n(6)Poblacion\n(7)Precio\n(8)Direccion\n'))
     if(que_desea=='1'):
         stats = graf.graficos(observaciones1['Ganancias'])
         print('Ejecutando...\n')
@@ -96,8 +96,13 @@ def main():
         stats = graf.graficos(observaciones7['Precio'])
         print('Ejecutando...\n')
         stats.analisisCaracteristica()
+    elif(que_desea=='8'):
+        j=1
+        for i in direccion:
+            print('-{}- {}\n'.format(j,i))
+            j=j+1
     else:
-        print('Introduzca un 1 , 2 , 3 , 4 , 5 , 6 o un 7.')
+        print('Introduzca un 1 , 2 , 3 , 4 , 5 , 6 , 7 o un 8')
 
 
 
