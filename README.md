@@ -1,4 +1,4 @@
-# EDA_sobre_dataset_USA_Housing
+# EDA sobre dataset USA_Housing
 
 El enlace a este repositorio es el siguiente: [GitHub](https://github.com/migueliiin/EDA_sobre_dataset_USA_Housing.git)
 
@@ -35,3 +35,5 @@ Los datos expresados de una manera gráfica son los siguientes:
 ### 7. Precio
 
 ![Precio](https://user-images.githubusercontent.com/91721552/167269145-5580020c-548f-49a0-9a30-d5d78c75f7d7.png)
+
+## -- Análisis de los datos --
