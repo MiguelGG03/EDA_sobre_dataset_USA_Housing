@@ -3,25 +3,38 @@ import numpy as np
 import librerias.hacer_graficos as graf
 
 
+
+def comparar_dos_listas(lista1,lista2):
+    lista_combinada=[]
+    for i in lista1:
+        w=0
+        for j in lista2:
+            while(w<=4999):
+                if(i[w]<(j[w]+10) and i[w]>(j[w]-10)):
+                    h=(i[w]+j[w])/2
+                    lista_combinada.append(h)
+                w=w+1
+    return lista_combinada
+
 def cambios_letras(lista):
-        lista_cambiada=[]
-        for elementos in lista:
-            if(elementos==''):
-                pass
-            else:
-                lista_cambiada.append(elementos)
-        return lista_cambiada
+    lista_cambiada=[]
+    for elementos in lista:
+        if(elementos==''):
+            pass
+        else:
+            lista_cambiada.append(elementos)
+    return lista_cambiada
 
 def cambios_numeros(lista):
-        lista_cambiada=[]
-        for elementos in lista:
-            if(elementos==''):
-                pass
-            elif(isinstance(float(elementos),float)!=True):
-                pass
-            else:
-                lista_cambiada.append(float(elementos))
-        return lista_cambiada
+    lista_cambiada=[]
+    for elementos in lista:
+        if(elementos==''):
+            pass
+        elif(isinstance(float(elementos),float)!=True):
+            pass
+        else:
+            lista_cambiada.append(float(elementos))
+    return lista_cambiada
 
 
 def main():
@@ -96,7 +109,7 @@ def main():
         stats = graf.graficos(observaciones6['Precio'])
         print('Ejecutando...\n')
         stats.analisisCaracteristica()
-        
+
     elif(que_desea=='7'):
         j=1
         for i in direccion:

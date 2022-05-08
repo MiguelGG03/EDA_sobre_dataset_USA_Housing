@@ -6,8 +6,6 @@ El enlace a este repositorio es el siguiente: [GitHub](https://github.com/miguel
 Los datos expresados de una manera gráfica son los siguientes:
 
 
-
-
 ### 1. Ganancias
 
 ![Ganancias](https://user-images.githubusercontent.com/91721552/167269138-2c6538a5-2ada-49f7-9b76-1a50ef62094b.png)
@@ -32,5 +30,10 @@ Los datos expresados de una manera gráfica son los siguientes:
 
 ![Precio](https://user-images.githubusercontent.com/91721552/167269145-5580020c-548f-49a0-9a30-d5d78c75f7d7.png)
 
+
 ## -- Análisis de los datos --
 
+Como se puede comprobar en el grafico de las Habitaciones y de los Dormitorios, de media por casa hay 7 habitaciones, y de media por casa hay 4 dormitorios.
+
+Esto solo nos deja 3 habitaciones restantes de media por casa, quepor media es menos de la mitad de las habitaciones que hay en cada casa.
+P
