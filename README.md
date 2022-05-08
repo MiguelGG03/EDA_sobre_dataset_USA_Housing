@@ -36,4 +36,19 @@ Los datos expresados de una manera gráfica son los siguientes:
 Como se puede comprobar en el grafico de las Habitaciones y de los Dormitorios, de media por casa hay 7 habitaciones, y de media por casa hay 4 dormitorios.
 
 Esto solo nos deja 3 habitaciones restantes de media por casa, quepor media es menos de la mitad de las habitaciones que hay en cada casa.
-P
+
+A mi se me ha ocurrido el siguiente algoritmo para poder comparar dos listas de valores numéricos y que te guarde los valores que se asemejen en una lista aparte haciendo una media de ambos valores y añadiendolos a la nueva lista.
+
+El algoritmo es el siguiente:
+
+    def comparar_dos_listas(lista1,lista2):
+        lista_combinada=[]
+        for i in lista1:
+            w=0
+            for j in lista2:
+                while(w<=4999):
+                    if(i[w]<(j[w]+10) and i[w]>(j[w]-10)):
+                        h=(i[w]+j[w])/2
+                        lista_combinada.append(h)
+                    w=w+1
+        return lista_combinada
