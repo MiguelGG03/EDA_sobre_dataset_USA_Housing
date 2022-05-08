@@ -52,3 +52,12 @@ El algoritmo es el siguiente:
                         lista_combinada.append(h)
                     w=w+1
         return lista_combinada
+
+
+## -- Conclusión --
+
+Este algoritmo es más útil para el tema de las ganancias y los precios, porque al pillar los datos en un rango tan amplio como es 20 en el tema de habitaciones pillaría todos los datos.
+
+Para el de las habitaciones podríamos ajustar este algoritmo a un rango de 0.5 o similares.
+
+No he logrado que el algoritmo funcione por un error llamado *'float' object is not subscriptable* , he estado investigando pero no logro encontrar el fallo, es el único error del programa, por eso el algoritmo no está implementado en ningun apartado.
