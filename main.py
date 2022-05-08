@@ -11,11 +11,8 @@ def comparar_dos_listas(lista1,lista2):
         for j in lista2:
             while(w<=4999):
                 if(i[w]<(j[w]+10) and i[w]>(j[w]-10)):
-                    h=0
                     h=(i[w]+j[w])/2
                     lista_combinada.append(h)
-                else:
-                    lista_combinada.append(0)
                 w=w+1
     return lista_combinada
 
@@ -119,9 +116,6 @@ def main():
             print('-{}- {}\n'.format(j,i))
             j=j+1
     else:
-        h=comparar_dos_listas(m_ganancias_area,precio)
-        print(h)
-
         print('Introduzca un 1 , 2 , 3 , 4 , 5 , 6 o un 7')
 
 
